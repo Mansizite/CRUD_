@@ -1,0 +1,83 @@
+.main {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    height: 90vh; /* Full viewport height */
+    margin-top: -100px;
+}
+
+.main2 {
+    display: flex;
+    height: 80%;
+    flex-direction: column; /* Stack inputs vertically */
+    justify-content: space-around; /* Space inputs evenly */
+    width: 500px; /* Fixed width for the form */
+    padding: 20px; /* Padding inside the form */
+    border: 2px solid black; /* Black border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
+    background-color: white; /* White background for better contrast */
+    animation: fadeIn 0.5s; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Slight upward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.input-field {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin: 10px 0; /* Spacing between inputs */
+    border: 1px solid #ced4da; /* Light border for inputs */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 16px; /* Larger font size */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border and shadow */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.input-field:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect on focus */
+}
+
+.submit-button {
+    background-color: #007bff; /* Blue background for submit button */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effect */
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    align-self: center;
+    margin-top: 30px;
+    border: none; /* Remove default border */
+}
+
+.submit-button:hover {
+    background-color:goldenrod ; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-container span {
+    cursor: pointer; /* Pointer cursor for clickable text */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.info-container span:hover {
+    color: #007bff; /* Change color on hover */
+}

@@ -1,0 +1,126 @@
+/* Read.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #e3f2fd, #bbdefb); /* Soft blue gradient */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Spacing below the heading */
+    font-size: 2.5rem; /* Increase font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    margin-top: -100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* Stack images and content vertically */
+    align-items: center; /* Center items */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 400px;
+    transition: transform 0.2s, box-shadow 0.2s; /* Added box-shadow transition */
+    background-color: #fdfdfd; /* Light background for cards */
+}
+
+.card:hover {
+    transform: scale(1.03); /* Slightly larger on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center align images */
+    margin-top: 10px;
+}
+
+.card img {
+    height: 240px;
+    width: 90%; /* Adjusted for better fit */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space below the image */
+    transition: transform 0.3s; /* Smooth transition for image scaling */
+}
+
+.card img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.card h3 {
+    margin: 10px 0; /* Space around the title */
+    color: #333;
+    font-size: 1.5rem; /* Increased font size */
+}
+
+.card p {
+    margin: 5px 0; /* Space between title and paragraph */
+    color: #777;
+}
+
+.button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 1rem; /* Font size for buttons */
+    transition: background-color 0.3s, transform 0.2s;
+    margin-right: 10px; /* Spacing between buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+
+.bg-danger {
+    background-color: #dc3545; /* Danger button color */
+}
+
+.bg-danger:hover {
+    background-color: #c82333; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.bg-primary {
+    background-color: #007bff; /* Primary button color */
+}
+
+.bg-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Full width for cards on small screens */
+    }
+
+    .card img {
+        width: 100%; /* Full width for images on small screens */
+        margin: 0; /* Remove margin for better fit */
+    }
+}
